@@ -1,0 +1,791 @@
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+}
+
+/* Estilos de la cabecera */
+
+.cabecera {
+
+  background:linear-gradient(
+
+    #00000091,
+
+    #00000074,
+
+    #00000091
+
+  ), url(https://img.freepik.com/foto-gratis/color-metalico-plateado-sedan-deportivo-carretera_114579-5035.jpg?w=1380&t=st=1690302526~exp=1690303126~hmac=92dff82004a2e0b317081accd40b38edd33ad0714dc6cdf92dc70b57022cb35c);
+
+  height: 100vh;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  position: relative;
+
+}
+
+
+
+.contenido-navegacion {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: #0000008d;
+
+  position: absolute;
+
+  top: 0;
+
+  width: 100%;
+
+}
+
+
+
+.logo {
+
+  width: 30%;
+
+}
+
+
+
+.logo h2 {
+
+  font-size: 40px;
+
+  padding-left: 50px;
+
+  color: #ffffff6b;
+
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+
+.navegacion{
+
+  width: 70%;
+
+  padding: 0;
+
+}
+
+
+
+.navegacion ul{
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-direction: row;
+
+  gap: 50px;
+
+}
+
+
+
+.navegacion ul li a{
+
+  font-size: 20px;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  text-transform: capitalize;
+
+  letter-spacing: 1px;
+
+}
+
+
+
+.navegacion a:hover {
+
+  color: #548b91;
+
+}
+
+.contenido-cabecera{
+
+  width: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+}
+
+.contenido-cabecera span{
+
+  font-size: 60px;
+
+  color: #fff;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+}
+
+.contenido-cabecera p{
+
+  color: #bcbcbc;
+
+  text-align: justify;
+
+  font-size: 22px;
+
+  padding-right: 5ch;
+
+}
+
+.contenido-cabecera button{
+
+  padding: 3vh 6vh;
+
+  border-radius: 6vh;
+
+  border: 0;
+
+  background: #333;
+
+  color: #fff;
+
+  font-size: 20px;
+
+  transition: .4s;
+
+  cursor: pointer;
+
+}
+
+.contenido-cabecera button:hover{
+
+  border: 1px solid #333;
+
+  background: none;
+
+}
+
+/* Estilos del cuerpo de página */
+
+.card-container {
+
+width: 100%;
+
+display: grid;
+
+grid-template-columns: 33.33% 33.33% 33.33%;
+
+grid-template-rows: 50% 50%;
+
+}
+
+.contenido-pagina{
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  background-image: url(./fond.jpg);
+
+}
+
+.container{
+
+  width: 1140px;
+
+  overflow-y: hidden;
+
+}
+
+.card {
+
+  margin: 15px;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  background: #fff;
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: default;
+
+  transition: all 400ms ease;
+
+}
+
+.card figure{
+
+  width: 100%;
+
+  height: 50%;
+
+  background: #4CAF50;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+
+}
+
+.card figure::before{
+
+  content: '';
+
+  position: absolute;
+
+  background: #1414147b;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+.card figure:hover::before{
+
+  background: #33333300;
+
+  transition: .4s all ease;
+
+}
+
+.card img {
+
+  width: 100%;
+
+  height: auto;
+
+}
+
+.card:hover {
+
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+
+  transform: translateY(-3%);
+
+}
+
+.card:hover figure{
+
+  opacity: 1;
+
+}
+
+.card img {
+
+  width: 100%;
+
+  height: 300px;
+
+}
+
+.card .contenido{
+
+  padding: 15px;
+
+  text-align: center;
+
+}
+
+/* Estilos del pie de página */
+
+footer {
+
+  background-color: #333;
+
+  color: #fff;
+
+  padding: 20px;
+
+  text-align: center;
+
+}
+
+footer p {
+
+  display: flex;
+
+  margin-right: 90px;
+
+  justify-content: end;
+
+}
+
+/* Estilos del formulario */
+
+form {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content:end;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+
+}
+
+input[type="text"],
+
+input[type="email"] {
+
+  width: 200px;
+
+  padding: 5px;
+
+  border-radius: 3px;
+
+  border: none;
+
+}
+
+input[type="submit"] {
+
+  padding: 8px 20px;
+
+  background-color: #4CAF50;
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 3px;
+
+  cursor: pointer;
+
+}
+
+/* Estilos de las redes sociales */
+
+.social-icons {
+
+  display: flex;
+
+  list-style: none;
+
+  padding: 0;
+
+  display: flex;
+
+  justify-content:start;
+
+  gap: 10px;
+
+  margin-bottom: 0;
+
+}
+
+.social-icons li {
+
+  display: inline-block;
+
+  margin-left: 50px;
+
+}
+
+.social-icons a {
+
+  display: inline-block;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+}
+
+@media (min-width:1200px) and (max-width: 1400px){
+
+  .contenido-cabecera{
+
+    width: 70%;
+
+  }
+
+  .contenido-cabecera span{
+
+    font-size: 52px;
+
+  }
+
+  .contenido-cabecera p{
+
+    font-size: 20px;
+
+  }
+
+  .contenido-cabecera button{
+
+    padding: 2vh 5vh;
+
+    font-size: 15px;
+
+}
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+  .container{
+
+    width: 1140px;
+
+  }
+
+  .contenido-cabecera{
+
+    width: 70%;
+
+  }
+
+  .logo{
+
+    width: 100%;
+
+  }
+
+  .contenido-cabecera span{
+
+    font-size: 52px;
+
+  }
+
+  .contenido-cabecera p{
+
+    font-size: 20px;
+
+  }
+
+  .contenido-cabecera button{
+
+    padding: 2vh 5vh;
+
+    font-size: 15px;
+
+}
+
+.card-container {
+
+  grid-template-columns: 42% 42%;
+
+  grid-template-rows: auto auto;
+
+  justify-content: center;
+
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+  .container{
+
+    width: 960px;
+
+  }
+
+  .contenido-navegacion {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+  .logo{
+
+    width: 100%;
+
+  }
+
+  .navegacion{
+
+    width: 100%;
+
+  }
+
+  .navegacion ul{
+
+    width: 100%;
+
+    justify-content: center;
+
+    padding-left: 10px;
+
+    flex-wrap: wrap;
+
+  }
+
+  .contenido-cabecera{
+
+    width: 90%;
+
+  }
+
+  .contenido-cabecera span{
+
+    font-size: 45px;
+
+  }
+
+  .contenido-cabecera p{
+
+    font-size: 18px;
+
+  }
+
+  .contenido-cabecera button{
+
+    padding: 2vh 4vh;
+
+    font-size: 13px;
+
+}
+
+.card-container {
+
+  justify-content: center;
+
+  grid-template-columns: 34% 34%;
+
+  grid-template-rows: auto auto;
+
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+
+  .container{
+
+    width: 720px;
+
+  }
+
+  .contenido-navegacion {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+  .logo{
+
+    width: 100%;
+
+  }
+
+  .navegacion{
+
+    width: 100%;
+
+  }
+
+  .navegacion ul{
+
+    width: 100%;
+
+    justify-content: center;
+
+    padding-left: 10px;
+
+    flex-wrap: wrap;
+
+  }
+
+  .contenido-cabecera{
+
+    width: 90%;
+
+  }
+
+  .contenido-cabecera span{
+
+    font-size: 38px;
+
+  }
+
+  .contenido-cabecera p{
+
+    font-size: 18px;
+
+  }
+
+  .contenido-cabecera button{
+
+    padding: 2vh 4vh;
+
+    font-size: 13px;
+
+}
+
+.card-container {
+
+  grid-template-columns: auto auto;
+
+  grid-template-rows: auto auto;
+
+  justify-content: center;
+
+  }
+
+}
+
+@media (max-width: 576px){
+
+
+
+  .container{
+
+    width: 100%;
+
+  }
+
+  .contenido-navegacion {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+  .logo{
+
+    width: 100%;
+
+  }
+
+  .logo h2{
+
+    font-size: 20px;
+
+  }
+
+  .navegacion{
+
+    width: 100%;
+
+  }
+
+  .navegacion ul{
+
+    width: 100%;
+
+    justify-content: center;
+
+    padding-left: 10px;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+  }
+
+  .contenido-cabecera{
+
+    width: 90%;
+
+    align-items: center;
+
+  }
+
+  .contenido-cabecera span{
+
+    width: 100%;
+
+    font-size: 28px;
+
+    text-align: center;
+
+  }
+
+  .contenido-cabecera p{
+
+    font-size: 18px;
+
+    padding: 0;
+
+  }
+
+  .contenido-cabecera button{
+
+    padding: 2vh 4vh;
+
+    font-size: 13px;
+
+}
+
+.card-container {
+
+  grid-template-columns: auto;
+
+  grid-template-rows: auto;
+
+  }
+
+}
